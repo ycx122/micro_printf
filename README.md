@@ -2,9 +2,10 @@
 A very small print function that adds floating point support. It doesn't support very small numbers because of its size, and double-precision
 
 #test
+
     xprintf("%d", 1234);			"1234"
     
-    xprintf("%6d,%3d%%", -200, 5);	"  -200,  5%"
+    xprintf("%6d,%3d%%", -200, 5);	 "  -200,  5%"
     
     xprintf("%-6u", 100);			"100   "
     
@@ -24,5 +25,5 @@ A very small print function that adds floating point support. It doesn't support
     
     xprintf("%c", 'a');				"a"
     
-    xprintf("%f", 10.0);            10.o
+    xprintf("%f", 10.0);            10.0
     
