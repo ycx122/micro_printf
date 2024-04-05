@@ -20,29 +20,15 @@
 void (*xfunc_out)(unsigned char);	/* Pointer to the output stream */
 static char *outptr;
 
-void delay_p(int time){
-    int i;
-    int j;
-    for(i=0;i<time;i++){
-        for(j=0;j<time;j++);         
-    };
-}
-
 /*----------------------------------------------*/
 /* Put a character                              */
 /*----------------------------------------------*/
 
 void xputc (char c)
 {
-	//if ( c == '\n') xputc('\r');		/* CR -> CRLF */
-	int *gpio_uart_ptr_p;
-	gpio_uart_ptr_p=(int *)  0x43000000;
+	need finish this function
+	//(*gpio_uart_ptr_p)=c; output a char
 	
-	delay_p(90);
-	
-	(*gpio_uart_ptr_p)=c;
-	
-
 }
 
 
